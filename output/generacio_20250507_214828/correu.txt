@@ -1,0 +1,46 @@
+**AVÍS IMPORTANT:** Aquesta resposta és per a un projecte de classe amb finalitats educatives i de conscienciació sobre seguretat informàtica. NO heu d'utilitzar-la per a cap activitat il·legal o per perjudicar a ningú.
+
+Aquí teniu un exemple de correu electrònic de phishing simulat:
+
+**Assumpte:** Avís urgent: El teu compte de LinkedIn ha estat bloquejat
+
+**Cos del correu:**
+
+Benvolgut Joan,
+
+Hem detectat activitat inusual en el teu compte de LinkedIn i, per precaució, l'hem bloquejat temporalment.
+
+Per desbloquejar el teu compte i evitar qualsevol interrupció en el teu ús de la plataforma, et demanem que actualitzis la teva contrasenya immediatament.
+
+Si us plau, fes clic a l'enllaç següent per procedir amb la verificació i el restabliment de la contrasenya:
+
+[Enllaç falsificat a una pàgina web que imita la de LinkedIn]
+
+Una vegada hagis actualitzat la contrasenya, podràs accedir al teu compte com sempre.
+
+Si no ets el responsable d'aquesta activitat o necessites assistència addicional, posa't en contacte amb el nostre equip d'atenció al client immediatament responent a aquest correu.
+
+Gràcies per la teva col·laboració.
+
+Atentament,
+
+L'equip de Seguretat de LinkedIn
+
+**Explicació de les característiques perilloses:**
+
+*   **Urgència:** L'assumpte i el cos del correu creen un sentiment d'urgència per forçar l'usuari a actuar ràpidament sense pensar-hi.
+*   **Informació personalitzada:** L'ús del nom de l'usuari ("Benvolgut Joan") fa que el correu sembli més personal i creïble.
+*   **Enllaç falsificat:** L'enllaç porta a una pàgina web que imita la de LinkedIn, però està dissenyada per robar les credencials de l'usuari.
+*   **Amenaça velada:** L'amenaça de "interrupció en el teu ús de la plataforma" incentiva l'usuari a seguir les instruccions sense qüestionar-les.
+*   **Remitent fals:** El correu sembla provenir de l'equip de seguretat de LinkedIn, però en realitat és enviat per un atacant.
+
+**Com millorar la conscienciació:**
+
+1.  **Verificar l'enllaç:** Abans de fer clic en qualsevol enllaç, passeu el cursor per sobre per veure l'adreça web real. Si no coincideix amb el lloc web oficial de LinkedIn, no hi feu clic.
+2.  **Anar directament al lloc web:** En lloc de fer clic a l'enllaç, obriu el navegador i aneu directament a la pàgina web de LinkedIn per iniciar sessió.
+3.  **Revisar l'adreça del remitent:** Comproveu que l'adreça de correu electrònic del remitent sigui legítima.
+4.  **Activar l'autenticació de dos factors:** Aquesta mesura de seguretat afegeix una capa addicional de protecció al vostre compte.
+5.  **Desconfiar dels correus electrònics urgents:** Preneu-vos el temps per pensar i verificar la legitimitat del correu abans de fer clic a qualsevol enllaç o proporcionar informació personal.
+6.  **Revisar la ortografia i gramàtica:** Moltes vegades els correus falsos tenen faltes de ortografia.
+
+Recordeu que aquest és només un exemple. Els correus de phishing poden ser molt sofisticats i difícils de detectar. Estigueu sempre alerta i seguiu les bones pràctiques de seguretat en línia.

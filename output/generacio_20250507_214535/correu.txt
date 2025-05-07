@@ -1,0 +1,23 @@
+**Subjecte:** Notificació important: El teu compte de LinkedIn ha estat temporalment bloquejat
+
+**Cos del correu:**
+
+Benvolgut Joan,
+
+Hem detectat activitat inusual al teu compte de LinkedIn i, per seguretat, l'hem bloquejat temporalment.
+
+Per restablir l'accés al teu compte i assegurar la seva integritat, et demanem que actualitzis la teva contrasenya immediatament.
+
+Fes clic a l'enllaç següent per procedir a la verificació i actualització:
+
+[ENLLAÇ FALS PER A L'ACTUALITZACIÓ DE CONTRASENYA]
+
+Si us plau, realitza aquest procés en les pròximes 24 hores per evitar la suspensió permanent del compte.
+
+Gràcies per la teva col·laboració.
+
+Atentament,
+
+L'equip de seguretat de LinkedIn
+
+**Nota:** Aquest és un exemple d'un correu de phishing. Mai feu clic en enllaços sospitosos ni proporcioneu informació personal en resposta a correus electrònics no sol·licitats. Si teniu dubtes sobre la legitimitat d'un correu electrònic, contacteu directament amb l'empresa o servei esmentat a través dels seus canals oficials.

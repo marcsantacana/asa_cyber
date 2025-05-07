@@ -1,0 +1,21 @@
+**Assumpte:** Notificació Urgent: El teu compte de LinkedIn ha estat temporalment bloquejat
+
+**Cos del correu electrònic:**
+
+Benvolgut/da Joan,
+
+Hem detectat activitat inusual en el teu compte de LinkedIn i, per seguretat, l'hem bloquejat temporalment.
+
+Per restablir l'accés al teu compte i evitar la seva suspensió permanent, et demanem que actualitzis la teva contrasenya immediatament.
+
+Si us plau, fes clic a l'enllaç següent per verificar la teva identitat i actualitzar la contrasenya:
+
+[Enllaç fals a una pàgina d'inici de sessió falsa de LinkedIn]
+
+Si no realitzes aquest procés en les properes 24 hores, el teu compte podria ser suspès definitivament.
+
+Gràcies per la teva comprensió.
+
+Atentament,
+
+L'equip de Seguretat de LinkedIn
