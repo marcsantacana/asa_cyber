@@ -3,15 +3,21 @@ from gophish.models import *
 import openpyxl
 import requests
 import json
+import os
+from dotenv import load_dotenv
 from datetime import datetime
 
-# Parametres de configuració
-API_KEY = '7c68e492db6b206a7852b247eb280109ef489470cfec5eb54b6c42489edae1ef'
-GOPHISH_HOST = 'https://127.0.0.1:3333/'
-VERIFY_SSL = False
-GEMINI_API_KEY = 'AIzaSyAdACe-iEGNAdgfjFHiKpzeM4a26KaeRuk'
+load_dotenv()
 
-api = Gophish(API_KEY, host=GOPHISH_HOST, verify=VERIFY_SSL)
+GOPHISH_URL = os.getenv("GOPHISH_URL")
+API_KEY = os.getenv("API_KEY")
+VERIFY_SSL = os.getenv("VERIFY_SSL", "False").lower() == "true"
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+
+if not GOPHISH_URL or not API_KEY:
+    raise ValueError("Cal definir GOPHISH_URL i GOPHISH_API_KEY en el fitxer .env")
+
+api = Gophish(API_KEY, host=GOPHISH_URL, verify=VERIFY_SSL)
 
 # FUNCIONS
 def export_excel(summary, filename):
