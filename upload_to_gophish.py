@@ -7,8 +7,8 @@ from datetime import datetime
 with open("config.json", "r", encoding="utf-8") as config_file:
     config = json.load(config_file)
 
-GOPHISH_URL = config["gophish_url"]
-API_KEY = config["api_key"]
+GOPHISH_URL = config["https://127.0.0.1:3333/"]
+API_KEY = config["7c68e492db6b206a7852b247eb280109ef489470cfec5eb54b6c42489edae1ef"]
 API_HEADERS = {
     "Authorization": f"Bearer {API_KEY}",
     "Content-Type": "application/json"
@@ -60,8 +60,8 @@ print(f"[✔] Landing page creada: ID {landing_id}")
 group_data = {
     "name": f"Grup_de_prova_{timestamp}",
     "targets": [
-        {"first_name": "Joan", "last_name": "Prova", "email": "joan@example.com"},
-        {"first_name": "Anna", "last_name": "Test", "email": "anna@example.com"}
+        {"first_name": "Joan", "last_name": "Prova", "email": "joan@enti.cat"},
+        {"first_name": "Anna", "last_name": "Test", "email": "anna@enti.cat"}
     ]
 }
 group_response = requests.post(f"{GOPHISH_URL}/api/groups/", headers=API_HEADERS, json=group_data)
