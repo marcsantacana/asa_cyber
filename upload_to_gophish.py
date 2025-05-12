@@ -1,25 +1,40 @@
 import os
 import json
 import requests
+import os
+from dotenv import load_dotenv
 from datetime import datetime
 from gophish import Gophish
 
-# Carregar configuració
-with open("config.json", "r", encoding="utf-8") as config_file:
-    config = json.load(config_file)
+load_dotenv()
 
-GOPHISH_URL = config["https://127.0.0.1:3333/"]
-API_KEY = config["7c68e492db6b206a7852b247eb280109ef489470cfec5eb54b6c42489edae1ef"]
+GOPHISH_URL = os.getenv("GOPHISH_URL")
+API_KEY = os.getenv("API_KEY")
+
+if not GOPHISH_URL or not API_KEY:
+    raise ValueError("Cal definir GOPHISH_URL i GOPHISH_API_KEY en el fitxer .env")
+
 API_HEADERS = {
     "Authorization": f"Bearer {API_KEY}",
     "Content-Type": "application/json"
 }
 
 # Ruta de l'última generació de contingut
-output_base = "output"
-latest_dir = sorted(os.listdir(output_base))[-1]
-correu_path = os.path.join(output_base, latest_dir, "correu.txt")
-html_path = os.path.join(output_base, latest_dir, "plantilla.html")
+output_base = "output/generacio_20250507_214535"
+
+# Comprovar que el directori existeix
+if not os.path.isdir(output_base):
+    raise NotADirectoryError(f"No s'ha trobat el directori: {output_base}")
+
+# Construir les rutes dels fitxers
+correu_path = os.path.join(output_base, "correu.txt")
+html_path = os.path.join(output_base, "plantilla.html")
+
+# Comprovar que els fitxers existeixen
+if not os.path.isfile(correu_path):
+    raise FileNotFoundError(f"No s'ha trobat el fitxer: {correu_path}")
+if not os.path.isfile(html_path):
+    raise FileNotFoundError(f"No s'ha trobat el fitxer: {html_path}")
 
 # Llegir fitxers generats
 with open(correu_path, "r", encoding="utf-8") as f:
@@ -81,7 +96,7 @@ campaign_data = {
     "launch_date": "",  # En blanc per llançar-la immediatament
     "send_by_date": ""
 }
-campaign_response = requests.post(f"{GOPHISH_URL}/api/campaigns/", headers=API_HEADERS, json=campaign_data)
+campaign_response = requests.post(f"{GOPHISH_URL}/campaigns/", headers=API_HEADERS, json=campaign_data)
 campaign_response.raise_for_status()
 campaign_id = campaign_response.json()["id"]
 print(f"[✔] Campanya creada i llançada: ID {campaign_id}")
