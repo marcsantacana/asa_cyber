@@ -5,7 +5,7 @@ import requests
 import json
 from datetime import datetime
 
-# === CONFIGURACIÓ ===
+# Parametres de configuració
 API_KEY = '7c68e492db6b206a7852b247eb280109ef489470cfec5eb54b6c42489edae1ef'
 GOPHISH_HOST = 'https://127.0.0.1:3333/'
 VERIFY_SSL = False
@@ -14,7 +14,6 @@ GEMINI_API_KEY = 'AIzaSyAdACe-iEGNAdgfjFHiKpzeM4a26KaeRuk'
 api = Gophish(API_KEY, host=GOPHISH_HOST, verify=VERIFY_SSL)
 
 # FUNCIONS
-
 def export_excel(summary, filename):
     wb = openpyxl.Workbook()
     ws = wb.active

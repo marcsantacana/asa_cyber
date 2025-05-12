@@ -1,3 +1,6 @@
 requests
 python-dotenv
 google-generativeai
+openpyxl
+gophish
+requests
