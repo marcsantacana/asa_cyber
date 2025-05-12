@@ -2,6 +2,7 @@ import os
 import json
 import requests
 from datetime import datetime
+from gophish import Gophish
 
 # Carregar configuració
 with open("config.json", "r", encoding="utf-8") as config_file:
