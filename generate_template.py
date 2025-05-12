@@ -8,7 +8,7 @@ import time
 
 # Carregar la clau d'API des del fitxer .env
 load_dotenv()
-API_KEY = os.getenv("GOOGLE_API_KEY")
+API_KEY = os.getenv("AIzaSyAdACe-iEGNAdgfjFHiKpzeM4a26KaeRuk")
 
 # Endpoint del model Gemini 2.0 Flash
 GEMINI_ENDPOINT = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={API_KEY}"
