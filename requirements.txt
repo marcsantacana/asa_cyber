@@ -5,3 +5,4 @@ openpyxl
 gophish
 urllib3
 six
+matplotlib

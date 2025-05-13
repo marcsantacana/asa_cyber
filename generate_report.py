@@ -4,6 +4,7 @@ import openpyxl
 import requests
 import json
 import os
+import matplotlib.pyplot as plt
 from dotenv import load_dotenv
 from datetime import datetime
 
@@ -37,7 +38,28 @@ def export_excel(summary, filename):
     wb.save(f"output/{filename}.xlsx")
     print(f"[✔] Exportació Excel feta a output/{filename}.xlsx")
 
+
 def generate_technical_report(summary, filename):
+    # Crear un gràfic de barres amb matplotlib
+    stats = {
+        "Emails enviats": summary.stats['emailsSent'],
+        "Emails oberts": summary.stats['opened'],
+        "Enllaços clicats": summary.stats['clicked'],
+        "Credencials enviades": summary.stats['submittedData']
+    }
+
+    plt.bar(stats.keys(), stats.values(), color=['blue', 'green', 'orange', 'red'])
+    plt.title(f"Estadístiques de la campanya: {summary.name}")
+    plt.ylabel("Quantitat")
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+
+    # Guardar el gràfic com a imatge
+    chart_path = f"output/{filename}_chart.png"
+    plt.savefig(chart_path)
+    plt.close()
+
+    # Generar l'informe tècnic amb la referència al gràfic
     with open(f"output/{filename}.txt", "w") as f:
         f.write(f"Informe Tècnic: {summary.name}\n")
         f.write("="*60 + "\n")
@@ -46,7 +68,12 @@ def generate_technical_report(summary, filename):
         f.write(f"Emails oberts: {summary.stats['opened']}\n")
         f.write(f"Enllaços clicats: {summary.stats['clicked']}\n")
         f.write(f"Credencials enviades: {summary.stats['submittedData']}\n")
+        f.write("\n[✔] Gràfic de les estadístiques generat a:\n")
+        f.write(f"{chart_path}\n")
+
     print(f"[✔] Informe tècnic generat a output/{filename}.txt")
+    print(f"[✔] Gràfic generat a {chart_path}")
+
 
 def generate_gemini_report(summary, filename):
     prompt = f"""
