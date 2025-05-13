@@ -1,0 +1,21 @@
+**Assumpte:** Alerta de seguretat: El teu compte de LinkedIn ha estat bloquejat
+
+**Cos del correu electrònic:**
+
+Benvolgut Joan,
+
+Hem detectat activitat inusual en el teu compte de LinkedIn i, per seguretat, l'hem bloquejat temporalment. 
+
+Per restablir l'accés al teu compte i garantir la seva seguretat, et demanem que actualitzis la teva contrasenya immediatament.
+
+Fes clic a l'enllaç següent per actualitzar la teva contrasenya:
+
+[ENLLAÇ FALS A UNA PÀGINA D'INICI DE SESSIÓ DE LINKEDIN FALSA]
+
+Si us plau, actualitza la teva contrasenya en les pròximes 24 hores per evitar la suspensió permanent del teu compte.
+
+Gràcies per la teva comprensió i cooperació.
+
+Atentament,
+
+L'equip de seguretat de LinkedIn

