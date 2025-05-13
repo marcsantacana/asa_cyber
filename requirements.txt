@@ -3,4 +3,5 @@ python-dotenv
 google-generativeai
 openpyxl
 gophish
-requests
+urllib3
+six

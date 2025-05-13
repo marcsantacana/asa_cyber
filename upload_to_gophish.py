@@ -20,7 +20,7 @@ API_HEADERS = {
 }
 
 # Ruta de l'última generació de contingut
-output_base = "output/generacio_20250507_214535"
+output_base = "/workspaces/asa_cyber/output/generacio_20250513_164148"
 
 # Comprovar que el directori existeix
 if not os.path.isdir(output_base):
@@ -89,11 +89,11 @@ print(f"[✔] Grup de prova creat: ID {group_id}")
 campaign_data = {
     "name": f"Campanya_LinkedIn_{timestamp}",
     "template": {"id": template_id},
-    "url": "http://tu-servidor.local",  # Canvia aquest valor segons la teva configuració de túnel
+    "url": "https://127.0.0.1:3333/",  # Canvia aquest valor segons la teva configuració de túnel
     "landing_page": {"id": landing_id},
     "groups": [{"id": group_id}],
     "smtp": {"id": 1},  # Assegura't que tens un servidor SMTP amb ID 1 configurat
-    "launch_date": "",  # En blanc per llançar-la immediatament
+    "launch_date": "",
     "send_by_date": ""
 }
 campaign_response = requests.post(f"{GOPHISH_URL}/campaigns/", headers=API_HEADERS, json=campaign_data)
