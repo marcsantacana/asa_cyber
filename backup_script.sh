@@ -7,12 +7,11 @@ LOG_FILE="/workspaces/asa_cyber/backups/backup.log"
 DATE=$(date +"%Y-%m-%d_%H-%M-%S")
 BACKUP_FILE="$BACKUP_DIR/backup_$DATE.tar.gz"
 
-# Crea el directori de còpies de seguretat si no existeix.
+# Crea el directori de còpies de seguretat i de logs si no existeix.
 if [ ! -d "$BACKUP_DIR" ]; then
     mkdir -p "$BACKUP_DIR"
 fi
 
-# Crea la carpeta de logs si no existeix.
 LOG_DIR=$(dirname "$LOG_FILE")
 if [ ! -d "$LOG_DIR" ]; then
     mkdir -p "$LOG_DIR"
